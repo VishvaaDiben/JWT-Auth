@@ -1,4 +1,5 @@
 require('dotenv').config()
+//relearn this jwt
 
 const express = require("express");
 const app = express();
