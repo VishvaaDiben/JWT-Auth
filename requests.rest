@@ -1,0 +1,29 @@
+GET http://localhost:3000/posts
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaHZhYSIsImlhdCI6MTU5NjUzMjk5NSwiZXhwIjoxNTk2NTMzMDEwfQ.1B8U9u7BxfDwg8YEsCvYJXMWRLoeRGyrndWWjH5VHAY
+
+###
+
+DELETE http://localhost:4000/logout
+Content-Type: application/json
+
+{
+    "token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaHZhYSIsImlhdCI6MTU5NjUzMjk5NX0.Gr4HYv9sVsyWT9E5k73uDI92UOYdpG8gXWpiEQCol0I"
+}
+
+###
+
+POST http://localhost:4000/token 
+Content-Type: application/json
+
+{
+    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiVmlzaHZhYSIsImlhdCI6MTU5NjUzMjk5NX0.Gr4HYv9sVsyWT9E5k73uDI92UOYdpG8gXWpiEQCol0I"
+}
+
+###
+
+POST http://localhost:4000/login
+Content-Type: application/json
+
+{
+    "username": "Diben"
+}
